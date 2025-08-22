@@ -1,0 +1,13 @@
+streamlit 
+langchain 
+langgraph 
+requests 
+beautifulsoup4 
+yt-dlp 
+hf_xet
+torch
+youtube_search
+lyricsgenius
+langchain-groq
+uvicorn
+fastapi
