@@ -2,10 +2,7 @@
 
 An intelligent web application that analyzes the mood of a given song and generates a curated playlist of similar-vibe tracks from YouTube. Powered by LangGraph for complex reasoning, Groq for ultra-fast LLM inference, and a FastAPI/SQLAlchemy backend for data persistence.
 
- 
-> **Note:** Replace the placeholder URL above with a real screenshot of your application.
 
----
 
 ## ✨ Core Features
 
@@ -77,46 +74,6 @@ Follow these instructions to get the project running on your local machine.
     -   **Groq:** Get your key from [Groq Console](https://console.groq.com/keys)
     -   **LyricsGenius:** Get your token from [Genius API Clients](http://genius.com/api-clients)
 
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/your-username/mood-playlist-generator-main.git
-cd mood-playlist-generator-main
-```
-
-### 2. Set Up a Virtual Environment
-
-It's highly recommended to use a virtual environment to manage dependencies.
-
-```bash
-# On Windows
-python -m venv .venv
-.\.venv\Scripts\activate
-
-# On macOS/Linux
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Configure Environment Variables
-
-Create a file named `.env` in the root of the project directory. Copy the contents of `.env.example` (if provided) or use the template below and fill in your API keys.
-
-**`.env` file:**
-```env
-# Get your key from https://console.groq.com/
-GROQ_API_KEY="gsk_..."
-
-# Get your token from http://genius.com/api-clients
-GENIUS_ACCESS_TOKEN="..."
-```
-
 ## 🏃‍♂️ Running the Application
 
 You need to run the backend server and the frontend application in **two separate terminals**.
@@ -140,17 +97,3 @@ streamlit run app.py
 Your web browser should automatically open to the application. If not, navigate to the local URL displayed in your terminal (usually `http://localhost:8501`).
 
 You can now enter a song title and generate your first mood-based playlist!
-
-## 🤝 Contributing
-
-Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-1.  Fork the Project
-2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4.  Push to the Branch (`git push origin feature/AmazingFeature`)
-5.  Open a Pull Request
-
-## 📄 License
-
-This project is unlicensed. You are free to use, modify, and distribute the code. However, it is recommended to add a `LICENSE` file (e.g., MIT License) for clarity if you plan to share this publicly.
