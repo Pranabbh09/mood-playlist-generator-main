@@ -42,12 +42,12 @@ workflow.add_edge("finalize", END)
 # Step 4: Compile the DAG
 graph = workflow.compile()
 
-from IPython.display import Image, display
-
-try:
-    display(Image(graph.get_graph().draw_mermaid_png()))
-except Exception as e:
-    print(e)
+# Remove IPython display code to avoid import errors
+# from IPython.display import Image, display
+# try:
+#     display(Image(graph.get_graph().draw_mermaid_png()))
+# except Exception as e:
+#     print(e)
 
 if __name__ == "__main__":
     input_state = {"song": "Happier Than Ever"}
